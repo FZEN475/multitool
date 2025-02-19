@@ -9,6 +9,4 @@ RUN tar zxvf /tmp/etcd.tar.gz -C /tmp && \
     chmod a+x /usr/local/bin/etcdctl && \
     apk --update add postgresql-client
 
-ADD ./entrypoint.sh /
-RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
