@@ -7,7 +7,7 @@ ADD https://github.com/coreos/etcd/releases/download/v${ETCD_VERSION}/etcd-v${ET
 RUN tar zxvf /tmp/etcd.tar.gz -C /tmp && \
     mv /tmp/etcd-v${ETCD_VERSION}-linux-amd64/etcdctl /usr/local/bin/etcdctl && \
     chmod a+x /usr/local/bin/etcdctl && \
-    apk --update add postgresql-client curl jq && \
+    apk --update add postgresql-client curl jq git openssh  && \
     curl https://dl.min.io/client/mc/release/linux-amd64/mc --create-dirs -o /usr/bin/mc && \
     chmod +x /usr/bin/mc
 
