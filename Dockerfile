@@ -11,7 +11,4 @@ RUN tar zxvf /tmp/etcd.tar.gz -C /tmp && \
     curl https://dl.min.io/client/mc/release/linux-amd64/mc --create-dirs -o /usr/bin/mc && \
     chmod +x /usr/bin/mc
 
-
-mc alias set ALIAS https://minio.storage.svc:9000 gitlab I1KJp6filRDOwJuTQnHjwIKZsgDdccKTRpB5Assd
-
 ENTRYPOINT ["/entrypoint.sh"]
