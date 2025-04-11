@@ -7,5 +7,5 @@ include:
       docker_builder: true
 
 variables:
-  CI_DEBUG_TRACE: "true"
+  CI_DEBUG_TRACE: "false"
 
